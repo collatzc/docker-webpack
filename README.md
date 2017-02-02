@@ -1,4 +1,4 @@
-# Docker Repo `collatzc/grunt`
+# Docker Repo `collatzc/webpack`
 
 ## Info
 
@@ -8,12 +8,15 @@ The Version in `LABEL` is the same as the tag of `node`.
 
 ```
 # with tag
-docker build -t collatzc/grunt:<tag> .
-docker push -t collatzc/grunt:<tag>
+docker build -t collatzc/webpack:<tag> .
+docker push -t collatzc/webpack:<tag>
 
 # and latest
-docker build -t collatzc/grunt:latest .
-docker push -t collatzc/grunt:latest
+docker build -t collatzc/webpack:latest .
+docker push -t collatzc/webpack:latest
+
+# both
+docker build -t collatzc/webpack:latest -t collatzc/webpack:7.2.1 .
 ```
 
 ## Log
